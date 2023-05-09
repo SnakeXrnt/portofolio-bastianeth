@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "This is the first project.",
+      "githubLink": "https://github.com/yourusername/project1"
+    },
+    {
+      "name": "Project 2",
+      "description": "This is the second project.",
+      "githubLink": "https://github.com/yourusername/project2"
+    },
+    {
+      "name": "Project 3",
+      "description": "This is the third project.",
+      "githubLink": "https://github.com/yourusername/project3"
+    }
+  ]
+}

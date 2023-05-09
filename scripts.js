@@ -1,51 +1,44 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const projectsFolder = "./projects/";
+// Define the URL of your JSON data file
+const projectsUrl = 'projects/data.json';
 
-  // Fetch all JSON files in the projects folder
-  fetch(projectsFolder)
-    .then(response => response.text())
+// Wait for the DOM to load before running the JavaScript code
+document.addEventListener('DOMContentLoaded', () => {
+  // Get a reference to the project list element
+  const projectList = document.getElementById('project-list');
+
+  // Load the JSON data using fetch
+  fetch(projectsUrl)
+    .then(response => response.json())
     .then(data => {
-      const parser = new DOMParser();
-      const html = parser.parseFromString(data, "text/html");
-      const jsonFiles = Array.from(html.querySelectorAll('a[href$=".json"]'))
-        .map(link => link.href.replace(window.location.href, '').replace(/^\//, ''));
+      // Loop through each project in the JSON data
+      for (const project of data.projects) {
+        // Create the HTML elements for this project
+        const projectElement = document.createElement('li');
+        const nameElement = document.createElement('h3');
+        const descriptionElement = document.createElement('p');
+        const linkElement = document.createElement('a');
+        const buttonElement = document.createElement('button');
+        const buttonLinkElement = document.createElement('a');
+        const linkText = document.createTextNode('View on GitHub');
+        const separatorElement = document.createElement('hr');
 
+        // Set the text and attributes of the HTML elements
+        nameElement.textContent = project.name;
+        descriptionElement.textContent = project.description;
+        buttonLinkElement.href = project.githubLink;
+        buttonLinkElement.target = '_blank';
+        buttonLinkElement.appendChild(linkText);
+        buttonElement.appendChild(buttonLinkElement);
 
-      // Fetch and parse each JSON file and create list items for each project
-      jsonFiles.forEach(jsonFile => {
-        fetch(`${projectsFolder}${jsonFile}`)
-          .then(response => response.json())
-          .then(project => {
-            const projectList = document.getElementById("project-list");
+        // Add the HTML elements to the project element
+        projectElement.appendChild(nameElement);
+        projectElement.appendChild(descriptionElement);
+        projectElement.appendChild(buttonElement);
+        projectElement.appendChild(separatorElement);
 
-            // Create list item
-            const listItem = document.createElement("li");
-
-            // Create project name heading
-            const name = document.createElement("h3");
-            name.innerText = project.Name;
-            listItem.appendChild(name);
-
-            // Create project description paragraph
-            const description = document.createElement("p");
-            description.innerText = project.Description;
-            listItem.appendChild(description);
-
-            // Create Github link button
-            const githubLink = document.createElement("a");
-            githubLink.href = project.GithubLink;
-            githubLink.target = "_blank";
-            githubLink.rel = "noopener noreferrer";
-            githubLink.innerText = "Go to Github";
-            listItem.appendChild(githubLink);
-
-            projectList.appendChild(listItem);
-
-            // Add horizontal line
-            const hr = document.createElement("hr");
-            projectList.appendChild(hr);
-          });
-      });
+        // Add the project element to the project list
+        projectList.appendChild(projectElement);
+      }
     })
     .catch(error => console.error(error));
 });
