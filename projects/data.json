@@ -1,19 +1,30 @@
 {
   "projects": [
     {
-      "name": "Project 1",
-      "description": "This is the first project.",
-      "githubLink": "https://github.com/yourusername/project1"
+      "name": "Hangman with React",
+      "description": "A Simple hangman made with react. This is a school project for the course Webbutveckling III.",
+      "screenshot": "https://store-images.s-microsoft.com/image/apps.6154.14206278105493874.8db44c32-48c8-48c1-b448-4ca54a6e60e5.ed6f1827-3f78-4b18-b0f7-42a44532bcbb?q=90&w=480&h=270",
+      "githubLink": "https://github.com/username/repo1"
     },
     {
-      "name": "Project 2",
-      "description": "This is the second project.",
-      "githubLink": "https://github.com/yourusername/project2"
+      "name": "HomeLab Server",
+      "description": "Actually this is kinda just a private project that i conducted for fun only. this server was based on debian and it was running openmediavault. it also serve as AirPlay server, SpotifyServer, and a ZerotierNode",
+      "screenshot": "https://cdn.discordapp.com/attachments/1102881661227642951/1105506598396370964/IMG_8496.png",
+      "githubLink": "https://github.com/username/repo2"
     },
     {
-      "name": "Project 3",
-      "description": "This is the third project.",
-      "githubLink": "https://github.com/yourusername/project3"
+      "name": "Windows 11 on NABU",
+      "description": "Nabu was actually a codename for Xiaomi Pad 5, and i was able to install windows 11 on it. it was a fun project to do, and i was able to use it as a daily driver. i dualbooted the windows with some custom android named 'EvolutionX' and it was a pretty smooth os",
+      "screenshot": "https://cdn.discordapp.com/attachments/1102881661227642951/1105507602349174814/fe9518bb-7a17-4939-b934-f9dcf4d8aa89.jpg",
+      "githubLink": "https://github.com/username/repo3"
+    },
+    {
+      "name": "Project 4",
+      "description": "A description of Project 3",
+      "screenshot": "path/to/screenshot3.png",
+      "githubLink": "https://github.com/username/repo3"
     }
   ]
 }
+
+
