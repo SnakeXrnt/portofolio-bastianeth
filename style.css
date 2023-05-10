@@ -112,7 +112,7 @@ body {
     height: 100%;
     z-index: -1;
     background-image: radial-gradient(circle at 25% 50%, #007aff, transparent 50%), radial-gradient(circle at 75% 50%, #ff0084, transparent 50%);
-    animation: background-animation 10s ease-in-out infinite;
+    animation: background-animation 1s ease-in-out infinite;
   }
   
   @keyframes background-animation {
