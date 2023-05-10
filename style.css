@@ -1,11 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    background-color: black;
   }
   
   .container {
     display: flex;
     height: 100vh;
+    
   }
   
   .left {
@@ -16,6 +18,8 @@ body {
     align-items: flex-start;
     padding: 50px;
     background-color: #ffffff;
+    background-color: rgba(0,0,0 , 0.5);
+    color: white;
   }
   
   
@@ -47,16 +51,19 @@ body {
   }
   
   h1 {
-    background: linear-gradient(to right, black, blue);
+    background: linear-gradient(to right, rgb(8, 0, 255), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+
 
   .button-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+
   }
   
   .red-button {
@@ -68,10 +75,15 @@ body {
     margin-right: 20px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    box-shadow: 0 0 0 0 #ffffff;
+    animation: pulse 1.5s infinite;
+    outline: 2px solid #ffffff;
+    transition: box-shadow 0.3s ease, outline 0.3s ease;
   }
   
   .red-button:hover {
     background-color: darkred;
+    box-shadow: 0 0 0 10px #ffffff;
   }
   
   .blue-button {
@@ -82,9 +94,69 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    box-shadow: 0 0 0 0 white;
+    animation: pulse 1.5s infinite;
+    outline: 2px solid #ffffff;
+    transition: box-shadow 0.3s ease, outline 0.3s ease;
   }
   
   .blue-button:hover {
     background-color: darkblue;
+    box-shadow: 0 0 0 10px #ffffff;
   }
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: radial-gradient(circle at 25% 50%, #007aff, transparent 50%), radial-gradient(circle at 75% 50%, #ff0084, transparent 50%);
+    animation: background-animation 10s ease-in-out infinite;
+  }
+  
+  @keyframes background-animation {
+    0% {
+      background-position: center center;
+    }
+    25% {
+      background-position: center right;
+    }
+    50% {
+      background-position: center center;
+    }
+    75% {
+      background-position: center left;
+    }
+    100% {
+      background-position: center center;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 white;
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(165, 26, 26, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(165, 26, 26, 0);
+    }
+  }
+  
+  .right {
+    position: relative; /* set position to relative */
+  }
+  
+  .right p {
+    position: absolute; /* set position to absolute */
+    bottom: 0; /* position at the bottom */
+    right: 0; /* position at the right */
+    margin: 0; /* remove any margin */
+    padding: 10px; /* add some padding for spacing */
+    color: white; /* set text color to white */
+    font-size: 14px; /* set font size */
+  }
+  
   
