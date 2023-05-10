@@ -1,5 +1,5 @@
 // Define the URL of your JSON data file
-const projectsUrl = 'projects/data.json';
+const projectsUrl = '../../projects/data.json';
 
 // Wait for the DOM to load before running the JavaScript code
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,27 +14,33 @@ document.addEventListener('DOMContentLoaded', () => {
       for (const project of data.projects) {
         // Create the HTML elements for this project
         const projectElement = document.createElement('li');
+        const thumbnailElement = document.createElement('img');
+        const detailsElement = document.createElement('div');
         const nameElement = document.createElement('h3');
         const descriptionElement = document.createElement('p');
-        const screenshotElement = document.createElement('img');
         const linkElement = document.createElement('a');
         const linkText = document.createTextNode('View on GitHub');
         const separatorElement = document.createElement('hr');
 
         // Set the text and attributes of the HTML elements
+        thumbnailElement.src = project.screenshot;
         nameElement.textContent = project.name;
         descriptionElement.textContent = project.description;
-        screenshotElement.src = project.screenshot;
         linkElement.href = project.githubLink;
         linkElement.target = '_blank';
         linkElement.appendChild(linkText);
 
         // Add the HTML elements to the project element
-        projectElement.appendChild(nameElement);
-        projectElement.appendChild(descriptionElement);
-        projectElement.appendChild(screenshotElement);
-        projectElement.appendChild(linkElement);
+        detailsElement.appendChild(nameElement);
+        detailsElement.appendChild(descriptionElement);
+        detailsElement.appendChild(linkElement);
+
+        projectElement.appendChild(thumbnailElement);
+        projectElement.appendChild(detailsElement);
         projectElement.appendChild(separatorElement);
+
+        // Add class name to the project element
+        projectElement.className = 'project';
 
         // Add the project element to the project list
         projectList.appendChild(projectElement);
@@ -42,4 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => console.error(error));
 });
-

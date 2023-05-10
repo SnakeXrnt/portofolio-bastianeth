@@ -17,12 +17,6 @@
       "description": "Nabu was actually a codename for Xiaomi Pad 5, and i was able to install windows 11 on it. it was a fun project to do, and i was able to use it as a daily driver. i dualbooted the windows with some custom android named 'EvolutionX' and it was a pretty smooth os",
       "screenshot": "https://cdn.discordapp.com/attachments/1102881661227642951/1105507602349174814/fe9518bb-7a17-4939-b934-f9dcf4d8aa89.jpg",
       "githubLink": "https://github.com/username/repo3"
-    },
-    {
-      "name": "Project 4",
-      "description": "A description of Project 3",
-      "screenshot": "path/to/screenshot3.png",
-      "githubLink": "https://github.com/username/repo3"
     }
   ]
 }
