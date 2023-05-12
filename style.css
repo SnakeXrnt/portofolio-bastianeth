@@ -159,4 +159,29 @@ body {
     font-size: 14px; /* set font size */
   }
   
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .left {
+      order: 2;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .right {
+      order: 1;
+      padding: 20px;
+    }
+  
+    .image-container {
+      height: auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
   

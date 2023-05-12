@@ -4,7 +4,7 @@
       "name": "Hangman with React",
       "description": "A Simple hangman made with react. This is a school project for the course Webbutveckling III. lorem ipsum dolor sit amet osjiaduasdbaubabdjdbsuaodo",
       "screenshot": "https://store-images.s-microsoft.com/image/apps.6154.14206278105493874.8db44c32-48c8-48c1-b448-4ca54a6e60e5.ed6f1827-3f78-4b18-b0f7-42a44532bcbb?q=90&w=480&h=270",
-      "githubLink": "https://github.com/username/repo1"
+      "githubLink": "https://github.com/SnakeXrnt/HTML-React-Hangman"
     },
     {
       "name": "HomeLab Server",
@@ -16,7 +16,67 @@
       "name": "Windows 11 on NABU",
       "description": "Nabu was actually a codename for Xiaomi Pad 5, and i was able to install windows 11 on it. it was a fun project to do, and i was able to use it as a daily driver. i dualbooted the windows with some custom android named 'EvolutionX' and it was a pretty smooth os",
       "screenshot": "https://cdn.discordapp.com/attachments/1102881661227642951/1105507602349174814/fe9518bb-7a17-4939-b934-f9dcf4d8aa89.jpg",
-      "githubLink": "https://github.com/username/repo3"
+      "githubLink": "https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5"
+    },
+    {
+      "name": "University Search",
+      "description": "Simple university fetcher (search by country name). using a simple ajax fetching and a free api service",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Ajax-University-Search"
+    },
+    {
+      "name": "Tw*tter clone",
+      "description": "A website that was trying to clone tw*ter's ui, made using python Flask",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592731997949992/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Flask-Twitter-Clone"
+    },
+    {
+      "name": "Kivy Paint App",
+      "description": "This implementation of a Kivy paint app was created using Python and the Kivy framework. It provides a user-friendly interface and a range of tools to help you create digital art.",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Kivy-PaintApp"
+    },
+    {
+      "name": "A Bit Racey",
+      "description": "made with pygame, The objective of the game is to navigate a character through a series of obstacles and enemies, collecting coins along the way. The character can move left and right, jump, and attack enemies with a sword.",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Pygame-ABitRacey"
+    },
+    {
+      "name": "Star Shooter",
+      "description": "made with pygame, The objective of the game is to navigate a spaceship through a field of enemies and asteroids, shooting them down while avoiding their attacks. The player can move the spaceship in any direction and fire lasers to destroy enemies.",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Pygame-Star-Shooter"
+    },
+    {
+      "name": "Flappy Bird",
+      "description": "Made with pygame, just a normal pygame. The objective of the game is to navigate a bird through a series of pipes without touching them. The bird automatically moves forward and the player must tap the spacebar to flap its wings and gain altitude.",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Pygame-FlappyBird"
+    },
+    {
+      "name": "To Do List",
+      "description": "also just a small project. just a normal to do list",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Tkinter-ToDoList"
+    },
+    {
+      "name": "Warehouse App",
+      "description": "As mentioned, this is a warehouse journaling app. feauturing exporting datas to excel automatically using CSV. also have the pdf and sending functionality. this is actually my last project in middle school",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Tkinter-WarehouseApp"
+    },
+    {
+      "name": "Contact App",
+      "description": "Second project, this is just a small project of making a phonebook/contact app",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Tkinter-ContactApp"
+    },
+    {
+      "name": "Cashier App",
+      "description": "First project, made in 8grade. this was a cashier app made with python tkinter, it feautures making a pdf invoice and send it trough email",
+      "screenshot": "https://cdn.discordapp.com/attachments/1106151419255463967/1106592050415140948/image.png",
+      "githubLink": "https://github.com/SnakeXrnt/Tkinter-CashierApp"
     }
   ]
 }
